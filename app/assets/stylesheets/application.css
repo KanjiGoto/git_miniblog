@@ -10,6 +10,9 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ 引数として与えられたディレクトリ以下のcssファイルをアルファベット順に全て読み込むという意味がある
+ 現在require_treeの引数には.(ドット)が渡されています。引数.(ドット)はカレントディレクトリを表します
+ つまり、この記述によってapp/assets/stylesheetsというディレクトリにあるcssファイルは全て読み込まれることになります
  *= require_tree .
  *= require_self
  */
