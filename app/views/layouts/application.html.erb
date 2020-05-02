@@ -5,40 +5,37 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <header>
-      <div class="header">
-        <div class="header-title">
-          <a href ="">MINI BLOG</a>
-          </div>
-        <div class="header-button">
-          <div class="header-sign-in">
-            <a href="">SIGHIN</a>
-          </div>
-          <div class="header-sign-out">
-            <a href="">SIGHOUT</a>
-          </div>
-          <div class="header-new">
-            <a href="">NEW</a>
-          </div>
+    <div class="header">
+        <div class="header-logo">
+          <h3>MINI BLOG</h3>
         </div>
-        
-      </div>
-    </header>
+        <div class="header-list">
+          <li>SIGHIN</li>
+          <li>SIGHOUT</li>
+          <li>NEW</li>
+        </div>
+    </div>
     
     <%= yield %>
     
-    <footer>
+    
       <div class="footer">
-        <div class="footer-message">
-          完成するかな？４月３０日　15時27分39秒
+        <div class="footer-logo">
+          ４月３０日 15時27分39秒 ５月２日CSSが読み込まれない
+        </div>
+        <div class="footer-list">
+          <li>あいうえお</li>
+          <li>かきくけこ</li>
+          <li>さしすせそ</li>
         </div>
       </div>
-    </footer>
+
     
   </body>
 </html>
