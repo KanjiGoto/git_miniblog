@@ -13,8 +13,6 @@
   letter-spacing: 4px;
   // ヘッダーのロゴを左に回り込ませる
   float: left;
-  
-  
   }
 
 .header ul{
@@ -35,11 +33,22 @@
 }
   
   
-  
-  .content{
+.content{
     height: calc(100vh - 100px);
     background-color: #CCFFFF;
+    padding: 50px 10px;
+    // text-align: center;
+    // display: flex;
+    
   }
+  
+.content-box{
+  width: 80%;
+  padding: 10px 10px;
+  min-width: 880px;
+  background-color: white;
+  // justify-content: center;
+}
 
 .content-button li {
   list-style: none; }
@@ -51,10 +60,23 @@
   height: 50px;
   background-color: #66FFFF; 
 }
+
 .footer-logo {
+  // フッターのロゴを左に回り込ませる
   float: left;
-  padding: 20px 10px; }
+  line-height: 50px;
+  }
+
+.footer ul{
+  // 子要素を横に並べる
+  display: flex;
+  // 右に寄せる
+  justify-content: flex-end;
+  
+}
 
 .footer-list li {
   list-style: none;
-  float: right; }
+  line-height: 30px;
+  margin: 10px 20px;
+}
