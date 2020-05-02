@@ -7,21 +7,29 @@
 }
 
 .header-logo {
-  float: left;
   padding-left: 20px;
   font-size: 20px;
   line-height: 50px;
   letter-spacing: 4px;
-  justify-content: center;
+  // ヘッダーのロゴを左に回り込ませる
+  float: left;
+  
   
   }
 
+.header ul{
+  // 子要素を横に並べる
+  display: flex;
+  // 右に寄せる
+  justify-content: flex-end;
+}
+
 .header li {
   list-style: none;
-  float: right; 
   margin: 10px;
   background-color: #0033FF;
   padding: 0 10px;
+  // 30pxはmaiginの上下10pxを高さ50からひいた高さを指定している
   line-height: 30px;
   color: white;
 }
