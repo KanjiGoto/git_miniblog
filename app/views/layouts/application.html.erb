@@ -13,12 +13,22 @@
   <body>
     <div class="header">
         <div class="header-logo">
-          <h3>MINI BLOG</h3>
+          <h3><a href="/">MINI BLOG</a></h3>
         </div>
         <ul class="header-list">
-          <li>SIGHIN</li>
-          <li>SIGHOUT</li>
-          <li>NEW</li>
+          
+          <% if user_signed_in? %>
+          <div class="signin">
+            <%= link_to "ログアウト" %>
+            <a class="post" href="/blogs/new">投稿する</a>
+          </div>
+          <% else %>
+          <div class="not-signin">
+            <%= link_to "ログイン" %>
+            <%= link_to "新規登録" %>
+          </div>
+          <% end %>
+          
         </ul>
     </div>
     
