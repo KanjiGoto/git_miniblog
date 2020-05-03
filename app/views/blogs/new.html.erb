@@ -1,0 +1,12 @@
+<div class="content-new">
+  <h3>TEXTAREA</h3>
+  
+  <!--パスにはcreateアクションへのパスを設定する-->
+  <%= form_tag('/blogs', method: :post) do %>
+
+    <textarea name="text" placeholder="ここに入力してください" row="5" cols="50"></textarea>
+    <input type="submit" value="SEND">
+
+  <% end %>
+  
+</div>
