@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  
+  # deviseのuserを作成した際に自動的に記述される
+  devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   
   # 一覧表示のルーティングを設定
