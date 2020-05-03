@@ -2,7 +2,7 @@ class BlogsController < ApplicationController
   
   
   def index
-    @blog = Blog.find(1)
+    @blogs = Blog.all
   end
   
   def new
