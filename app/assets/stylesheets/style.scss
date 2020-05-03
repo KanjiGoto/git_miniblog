@@ -47,8 +47,29 @@
   padding: 10px 10px;
   min-width: 880px;
   background-color: white;
+  
   // justify-content: center;
+  
+  // 枠線
+  border: solid 3px #6091d3;
+  border-radius: 10px;
 }
+
+.content-box textarea{
+  border: solid 1px;
+  border-radius: 5px;
+}
+.submit-button{
+  border: solid 2px;
+  border-radius: 5px;
+  background-color: #0066FF;
+}
+.submit-button:hover{
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #000066;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
 
 .content-button li {
   list-style: none; }
