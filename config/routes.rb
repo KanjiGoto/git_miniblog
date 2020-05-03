@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   get 'blogs' => 'blogs#index'
   # 投稿画面のルーティングを設定
   get 'blogs/new' => 'blogs#new'
+  # 投稿を保存するルーティングを設定
+  post 'blogs' => 'blogs#create'
   
 end
