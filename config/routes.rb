@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   
   # 一覧表示のルーティングを設定
   get 'blogs' => 'blogs#index'
+  # 投稿画面のルーティングを設定
+  get 'blogs/new' => 'blogs#new'
   
 end
