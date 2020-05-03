@@ -5,4 +5,7 @@ class BlogsController < ApplicationController
     @blog = Blog.find(1)
   end
   
+  def new
+  end
+  
 end
