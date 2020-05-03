@@ -3,13 +3,12 @@
   
   <h3>ブログ内容</h3>
   
-  <%= @blogs.each do |blog| %>
+  <!--each文の％には＝をつけないこと　下に変な文章がでてしまうよ-->
+  <% @blogs.each do |blog| %>
     <div class="content-box">
+      <P><%= blog.name %></P>
       <P><%= blog.text %></P>
     </div> 
   <% end %>
-  
-  
 
-  
 </div>
