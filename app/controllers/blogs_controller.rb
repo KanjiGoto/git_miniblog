@@ -13,7 +13,7 @@ class BlogsController < ApplicationController
   
   # 投稿を保存するcreateアクションを定義
   def create
-    Blog.create(blog_params)
+    Blog.create(text: blog_params[:text], user_id: current_user.id)
   end
   
   private
@@ -22,6 +22,7 @@ class BlogsController < ApplicationController
     params.permit(:text) 
   end
   
+
   def move_to_index
     redirect_to action: :index unless user_signed_in?
   end
