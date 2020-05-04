@@ -8,6 +8,7 @@
     <div class="content-box">
       <P><%= blog.name %></P>
       <P><%= blog.text %></P>
+      <%= link_to '削除', '/blogs/#{blog.id}', method: :delete %>
     </div> 
   <% end %>
 
