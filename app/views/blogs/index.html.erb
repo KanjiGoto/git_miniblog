@@ -11,6 +11,7 @@
       
       <% if user_signed_in? && current_user.id == blog.user_id %>
       <%= link_to '削除', "/blogs/#{blog.id}", method: :delete %>
+      <%= link_to '編集', "/blogs/#{blog.id}/edit"%>
       <% end %>
     </div> 
   <% end %>
