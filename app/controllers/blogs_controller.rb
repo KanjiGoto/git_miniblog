@@ -24,6 +24,11 @@ class BlogsController < ApplicationController
     end
   end
   
+  # 投稿を編集するeditアクションを定義
+  def edit
+    @blog = Blog.find(params[:id])
+  end
+  
   
   
   private
