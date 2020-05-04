@@ -1,5 +1,8 @@
 class BlogsController < ApplicationController
   
+  # before_actionを使用すると、そのコントローラー内のすべてのアクションが動く前に動くメソッド
+  before_action :move_to_index, except: :index
+  
   
   def index
     @blogs = Blog.all
@@ -16,7 +19,11 @@ class BlogsController < ApplicationController
   private
   # ストロングパラメータを使って、事前に許可したデータのみが保存されるように定義する
   def blog_params
-    params.permit(:text)
+    params.permit(:text) 
+  end
+  
+  def move_to_index
+    redirect_to action: :index unless user_signed_in?
   end
   
 end
