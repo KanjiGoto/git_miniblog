@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   root 'blogs#index'
   # 投稿画面のルーティングを設定
   get 'blogs/new' => 'blogs#new'
+  # 投稿を編集するルーティングの設定
+  get 'blogs/:id/edit' => 'blogs#edit'
   # 投稿を保存するルーティングを設定
   post 'blogs' => 'blogs#create'
   # 投稿を削除するルーティングを設定
