@@ -16,10 +16,20 @@ class BlogsController < ApplicationController
     Blog.create(text: blog_params[:text], user_id: current_user.id)
   end
   
+  # 投稿を削除するdestroyアクションを定義
+  def destory
+    blog = Blog.find(params[:id])
+    if blog.user_id == current_user.id
+      blog.destory
+    end
+  end
+  
+  
+  
   private
   # ストロングパラメータを使って、事前に許可したデータのみが保存されるように定義する
   def blog_params
-    params.permit(:text) 
+    params.permit(:text)
   end
   
 
