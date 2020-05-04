@@ -6,9 +6,12 @@
   <!--each文の％には＝をつけないこと　下に変な文章がでてしまうよ-->
   <% @blogs.each do |blog| %>
     <div class="content-box">
-      <P><%= blog.name %></P>
+      
       <P><%= blog.text %></P>
-      <%= link_to '削除', '/blogs/#{blog.id}', method: :delete %>
+      
+      <% if user_signed_in? && current_user.id == blog.user_id %>
+      <%= link_to '削除', "/blogs/#{blog.id}", method: :delete %>
+      <% end %>
     </div> 
   <% end %>
 
