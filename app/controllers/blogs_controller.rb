@@ -17,10 +17,10 @@ class BlogsController < ApplicationController
   end
   
   # 投稿を削除するdestroyアクションを定義
-  def destory
+  def destroy
     blog = Blog.find(params[:id])
     if blog.user_id == current_user.id
-      blog.destory
+      blog.destroy
     end
   end
   
