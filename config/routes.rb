@@ -17,5 +17,7 @@ Rails.application.routes.draw do
   delete 'blogs/:id' => 'blogs#destroy'
   # 投稿を編集するためのルーティングを設定
   patch 'blogs/:id' => 'blogs#update'
+  # 投稿の詳細を見るためのルーティングを設定
+  get 'blogs/:id/show' => 'blogs#show'
   
 end
