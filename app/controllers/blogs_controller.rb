@@ -11,6 +11,11 @@ class BlogsController < ApplicationController
   def new
   end
   
+  # 詳細を見るためのshowアクションを定義
+  def show
+    @blog = Blog.find(params[:id])
+  end
+  
   # 投稿を保存するcreateアクションを定義
   def create
     Blog.create(text: blog_params[:text], user_id: current_user.id)
