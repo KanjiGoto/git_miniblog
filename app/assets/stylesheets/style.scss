@@ -38,6 +38,23 @@
   
 }
 
+// ログイン・サインアップボタン
+.actions input{
+  margin: 10px 10px;
+    background-color: #BBBBBB;
+    padding: 5px 5px;
+    border: solid 2px;
+    border-radius: 5px;
+}
+.actions input:hover{
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #000066;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+
+
+
 .signin{
   list-style: none;
   margin: 10px;
@@ -98,6 +115,21 @@
   border: solid 1px;
   border-radius: 5px;
 }
+
+// ログイン・サインアップの下にあるボタンをピンクっぽくしている
+.content-box a{
+  text-decoration: none;
+    margin: 10px;
+    padding: 2px;
+    background-color: #00BFFF;
+    border-radius: 5px;
+}
+// ログイン・サインアップの下にあるボタンにカーソルを合わせたとき少し透明にしている
+.content-box a:hover{
+  opacity: 0.75;
+}
+
+
 .submit-button{
   border: solid 2px;
   border-radius: 5px;
