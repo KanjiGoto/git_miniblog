@@ -13,6 +13,11 @@
   letter-spacing: 4px;
   // ヘッダーのロゴを左に回り込ませる
   float: left;
+  text-decoration: none;
+  
+  h3 a{
+    text-decoration: none;
+  }
   }
 
 .header ul{
@@ -30,6 +35,7 @@
   // 30pxはmaiginの上下10pxを高さ50からひいた高さを指定している
   line-height: 30px;
   color: white;
+  
 }
 
 .signin{
@@ -43,7 +49,7 @@
   a{
     margin: 10px;
     background-color: #0033FF;
-    
+    text-decoration: none;
   }
 }
 .not-signin{
@@ -57,7 +63,7 @@
   a{
     margin: 10px;
     background-color: #0033FF;
-    
+    text-decoration: none;
   }
 }
   
