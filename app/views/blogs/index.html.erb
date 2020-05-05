@@ -10,7 +10,9 @@
       <P><%= blog.text %></P>
       
       <% if user_signed_in? && current_user.id == blog.user_id %>
+      <%= link_to '詳細', "/blogs/#{blog.id}/show"%>
       <%= link_to '削除', "/blogs/#{blog.id}", method: :delete %>
+      <!--methodの指定が何もなければgetになる-->
       <%= link_to '編集', "/blogs/#{blog.id}/edit"%>
       <% end %>
     </div> 
